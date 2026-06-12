@@ -1,0 +1,153 @@
+body {
+  background-image: url(./images/wallpapers/sonoma-horizon.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: black;
+  font-family: Calibri;
+}
+
+div.taskbar {
+  display: flex;
+  width: 100%;
+  position: absolute;
+
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+  backdrop-filter: blur(10px);
+
+  justify-content: flex-end;
+
+  bottom: 0;
+  color: rgba(23, 23, 23, 0.3);
+  background-color: rgba(23, 23, 23, 0.3);
+}
+
+div.taskbar p {
+  color: white;
+  margin-right: 20px;
+}
+
+div.sys-info {
+  width: 200px;
+}
+
+div {
+  border: solid;
+  color: white;
+  border-width: 1px;
+
+  background-color: white;
+}
+
+div.window {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+}
+div.window-header {
+  cursor: grab;
+  background-color: rgb(230, 230, 230);
+  height: 30px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+div.menu-buttons {
+  background-color: rgb(230, 230, 230);
+}
+div.window-header img {
+  width: 30px;
+  height: fit-content;
+}
+p.header-title {
+  margin-left: 5px;
+}
+div.window-header p {
+  color: black;
+}
+div.window#welcome {
+  width: 250px;
+  height: 375px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.user-icon {
+  border-radius: 100%;
+  width: 200px;
+  padding-top: 25px;
+}
+.user-icon-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.window-body-text#welcome-body-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+div.window-body-text#welcome-body-text h1 {
+  margin-top: 0px;
+}
+div.desktop-apps {
+  background-color: transparent;
+  color: transparent;
+}
+div.app {
+  background-color: transparent;
+  color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  margin-left: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+div.app img {
+  width: 75px;
+}
+div.app p {
+  margin-top: 5px;
+}
+div.window#steam {
+  width: 630px;
+  height: 650px;
+  display: none;
+}
+div.steam-owned-games {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: auto;
+}
+div.steam-owned-games img {
+  width: 200px;
+  padding-top: 5px;
+  padding-left: px;
+}

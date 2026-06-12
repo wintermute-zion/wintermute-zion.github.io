@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebOS 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="taskbar" id="taskbar">
+      <p style="cursor: pointer" id="welcome-open">Welcome App</p>
+      <p id="taskbarClock">5:49 PM</p>
+    </div>
+
+    <div class="desktop-apps" id="desktop-apps">
+      <div class="app" id="steam-open">
+        <img src="images/app-icons/steam.png" alt="" />
+        <p>Steam</p>
+      </div>
+    </div>
+
+    <div class="window" id="steam">
+      <div class="window-header" id="steamheader">
+        <p class="header-title">My favorite Steam games</p>
+        <div class="menu-buttons">
+          <img src="images/menu-items/minimize.png" alt="" />
+          <img src="images/menu-items/maximize.png" alt="" />
+          <img src="images/menu-items/close.png" id="steam-close" />
+        </div>
+      </div>
+      <div class="window-body" id="steambody">
+        <div class="steam-owned-games">
+          <a
+            href="https://store.steampowered.com/app/367520/Hollow_Knight/"
+            target="_blank"
+            ><img src="images/game-icons/hollowknight.png" alt=""
+          /></a>
+          <a
+            href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/"
+            target="_blank"
+            ><img src="images/game-icons/silksong.png" alt=""
+          /></a>
+          <a
+            href="https://store.steampowered.com/app/588650/Dead_Cells/"
+            target="_blank"
+            ><img src="images/game-icons/deadcells.png" alt=""
+          /></a>
+          <a
+            href="https://store.steampowered.com/app/457140/Oxygen_Not_Included/"
+            target="_blank"
+            ><img src="images/game-icons/oxygennotincluded.png" alt=""
+          /></a>
+          <a
+            href="https://store.steampowered.com/app/427520/Factorio/"
+            target="_blank"
+            ><img src="images/game-icons/factorio.png" alt=""
+          /></a>
+          <a
+            href="https://store.steampowered.com/app/1809540/Nine_Sols/"
+            target="_blank"
+            ><img src="images/game-icons/ninesols.png" alt=""
+          /></a>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="window" id="welcome">
+      <div class="window-header" id="welcomeheader">
+        <p class="header-title">Welcome</p>
+        <div class="menu-buttons">
+          <img src="images/menu-items/minimize.png" alt="" />
+          <img src="images/menu-items/maximize.png" alt="" />
+          <img src="images/menu-items/close.png" id="welcome-close" />
+        </div>
+      </div>
+      <div class="window-body" id="welcomebody">
+        <div class="user-icon-div">
+          <img
+            class="user-icon"
+            src="images/user-icons/avatar_alt.png"
+            alt=""
+          />
+        </div>
+        <div class="window-body-text" id="welcome-body-text">
+          <p>Signed in as</p>
+          <h1>Wintermute/h1>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
